@@ -1,0 +1,52 @@
+1- 
+
+Quando K for igual a 13, a soma será 91.
+
+9
+128
+49
+100
+13
+
+2 - Sequencia de fibonacci:
+
+function fibonacci(numero){
+
+    var num = 0;
+    var proximoNumero = 1;
+    var auxiliar;
+    var sequencia = [];
+
+    while(num < numero){
+        sequencia.push(num)
+        auxiliar = proximoNumero;
+        proximoNumero = proximoNumero + num;
+        num = auxiliar;
+    }
+
+    return sequencia;
+}
+
+3 - lógica do proximo elemento:
+
+a - 9
+b - 128
+c - 49
+d - 100
+e - 13
+
+4 - verificando qual lampada está mais quente do que a outra
+
+5 - reverter uma string:
+
+function reverterString(str){
+
+    let novaString = "";
+    for(let i = str.length - 1; i >= 0; i--){
+        novaString += str[i]
+    }
+    return novaString;
+}
+
+
+
